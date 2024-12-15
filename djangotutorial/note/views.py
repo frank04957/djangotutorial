@@ -11,7 +11,7 @@ def detail(request, note_id):
     note = get_object_or_404(Note, id=note_id)
     return render(request, 'note/detail.html', {'note': note})
 
-
+@csrf_exempt
 def add_note(request):
     if request.method == "POST":
         title = request.POST.get('title', '').strip()
