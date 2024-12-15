@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-f(-5cjate@+y%^b!qqu@c1$whpr$ljl5w7*vkqw9k1t9f&g97p
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS= ["https://heroic-eagerness-production.up.railway.app"]
 
 # Application definition
 
